@@ -88,6 +88,9 @@ config :wobserver,
   discovery: :none,
   mode: :plug
 
+config :block_scout_web, BlockScoutWeb.ApiRouter, enabled: System.get_env("DISABLE_API") != "true"
+config :block_scout_web, BlockScoutWeb.WebRouter, enabled: System.get_env("DISABLE_WEBAPP") != "true"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

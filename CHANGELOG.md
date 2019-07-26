@@ -1,6 +1,7 @@
 ## Current
 
 ### Features
+- [#2376](https://github.com/poanetwork/blockscout/pull/2376) - Split API and WebApp routes
 
 ### Fixes
 
