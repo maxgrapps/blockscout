@@ -7,6 +7,7 @@
 ### Fixes
 - [#2459](https://github.com/poanetwork/blockscout/pull/2459) - fix top addresses query
 - [#2463](https://github.com/poanetwork/blockscout/pull/2463) - dark theme fixes
+- [#2468](https://github.com/poanetwork/blockscout/pull/2468) - fix confirmations for non consensus blocks
 - [#2425](https://github.com/poanetwork/blockscout/pull/2425) - Force to show address view for checksummed address even if it is not in DB
 
 ### Chore
