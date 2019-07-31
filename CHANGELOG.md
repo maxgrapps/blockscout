@@ -2,6 +2,7 @@
 
 ### Features
 - [#2456](https://github.com/poanetwork/blockscout/pull/2456) - fetch pending transactions for geth
+- [#2458](https://github.com/poanetwork/blockscout/pull/2458) - Add LAST_BLOCK var to index range of blocks
 
 ### Fixes
 - [#2459](https://github.com/poanetwork/blockscout/pull/2459) - fix top addresses query
