@@ -51,7 +51,19 @@ config :explorer, Explorer.KnownTokens, enabled: true, store: :ets
 
 config :explorer, Explorer.Integrations.EctoLogger, query_time_ms_threshold: :timer.seconds(2)
 
-config :explorer, Explorer.Market.History.Cataloger, enabled: System.get_env("DISABLE_INDEXER") != "true"
+config :explorer, Explorer.Market.History.Historian, enabled: true
+
+history_fetch_interval =
+  case Integer.parse(System.get_env("HISTORY_FETCH_INTERVAL", "")) do
+    {mins, ""} -> mins
+    _ -> 60
+  end
+  |> :timer.minutes()
+
+config :explorer, Explorer.History.Process, history_fetch_interval: history_fetch_interval
+
+config :explorer, Explorer.Chain.Transaction.History.Historian,
+  enabled: System.get_env("ENABLE_TXS_STATS", "false") != "false"
 
 config :explorer, Explorer.Repo, migration_timestamps: [type: :utc_datetime_usec]
 
