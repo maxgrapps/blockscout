@@ -1,6 +1,7 @@
 ## Current
 
 ### Features
+- [#2376](https://github.com/poanetwork/blockscout/pull/2376) - Split API and WebApp routes
 - [#2456](https://github.com/poanetwork/blockscout/pull/2456) - fetch pending transactions for geth
 - [#2458](https://github.com/poanetwork/blockscout/pull/2458) - Add LAST_BLOCK var to index range of blocks
 

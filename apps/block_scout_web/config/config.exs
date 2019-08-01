@@ -30,7 +30,9 @@ config :block_scout_web,
     "Bloxy" => "https://bloxy.info/",
     "Blockchain.com" => "https://www.blockchain.com/explorer?currency=ETH"
   },
-  other_networks: System.get_env("SUPPORTED_CHAINS")
+  other_networks: System.get_env("SUPPORTED_CHAINS"),
+  webapp_url: System.get_env("WEBAPP_URL"),
+  api_url: System.get_env("API_URL")
 
 config :block_scout_web, BlockScoutWeb.Counters.BlocksIndexedCounter, enabled: true
 
@@ -87,6 +89,12 @@ config :wobserver,
   # return only the local node
   discovery: :none,
   mode: :plug
+
+config :block_scout_web, BlockScoutWeb.ApiRouter,
+  enabled: System.get_env("DISABLE_API") != "true",
+  enabled_update_endpoints: System.get_env("DISABLE_UPDATE_ENDPOINTS") != "true"
+
+config :block_scout_web, BlockScoutWeb.WebRouter, enabled: System.get_env("DISABLE_WEBAPP") != "true"
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
