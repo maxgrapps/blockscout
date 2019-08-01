@@ -5,6 +5,7 @@
 - [#2433](https://github.com/poanetwork/blockscout/pull/2433) - Add a functionality to try Eth RPC methods in the documentation
 - [#2456](https://github.com/poanetwork/blockscout/pull/2456) - fetch pending transactions for geth
 - [#2458](https://github.com/poanetwork/blockscout/pull/2458) - Add LAST_BLOCK var to index range of blocks
+- [#2470](https://github.com/poanetwork/blockscout/pull/2470) - Allow Realtime Fetcher to wait for small skips
 
 ### Fixes
 - [#2459](https://github.com/poanetwork/blockscout/pull/2459) - fix top addresses query
@@ -13,6 +14,7 @@
 - [#2425](https://github.com/poanetwork/blockscout/pull/2425) - Force to show address view for checksummed address even if it is not in DB
 
 ### Chore
+- [#2402](https://github.com/poanetwork/blockscout/pull/2402) - bump otp version to 22.0
 - [#2432](https://github.com/poanetwork/blockscout/pull/2432) - bump credo version
 - [#2457](https://github.com/poanetwork/blockscout/pull/2457) - update mix.lock
 - [#2435](https://github.com/poanetwork/blockscout/pull/2435) - Replace deprecated extract-text-webpack-plugin with mini-css-extract-plugin

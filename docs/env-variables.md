@@ -6,7 +6,7 @@ Below is a table outlining the environment variables utilized by BlockScout.
 - This table is horizontally scrollable, version information is located in the last column.
 - Settings related to the `ETHEREUM_JSONRPC_VARIANT` variable and client related settings for running a full archive node with geth or parity are located in [this forum post](https://forum.poa.network/t/faq-what-settings-are-required-on-a-parity-or-geth-client/1805).
 - Additional information related to certain variables is available on the [ansible deployment](ansible-deployment.md) page.
-- To set variables using the CLI, use the export command. For example: 
+- To set variables using the CLI, use the export command. For example:
 ```bash
 $ export ETHEREUM_JSONRPC_VARIANT=parity
 $ export COIN=POA
@@ -49,6 +49,7 @@ $ export NETWORK=POA
 | `GRAPHIQL _TRANSACTION` | | Default transaction in query to GraphiQL. | (empty) |  v1.3.4+ |
 | `FIRST_BLOCK` | | The block number, where indexing begins from. | 0 |  v1.3.8+ |
 | `LAST_BLOCK` | | The block number, where indexing stops. | (empty) | master |
+| `MAX_SKIPPING_DISTANCE` | | The maximum distance the indexer is allowed to wait for when notified of a number not following the lask known one. | 4 | master |
 | `TXS_COUNT_CACHE_PERIOD` | | Interval in seconds to restart the task, which calculates the total txs count. | 60 * 60 * 2 |  v1.3.9+ |
 | `ADDRESS_WITH_BALANCES` <br /> `_UPDATE_INTERVAL`|  | Interval in seconds to restart the task, which calculates addresses with balances. | 30 * 60 |  v1.3.9+ |
 | `LINK_TO_OTHER_EXPLORERS` | | true/false. If true, links to other explorers are added in the footer  | (empty)  |  v1.3.0+ |
