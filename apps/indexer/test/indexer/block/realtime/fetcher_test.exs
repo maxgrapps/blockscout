@@ -473,7 +473,7 @@ defmodule Indexer.Block.Realtime.FetcherTest do
 
       number = 400
 
-      assert {:fetch_and_import, [previous_number..number]} =
+      assert {:fetch_and_import, previous_number..number} =
                Realtime.Fetcher.determine_fetching_action(number, skipping_window_end, previous_number, max_number_seen)
     end
   end

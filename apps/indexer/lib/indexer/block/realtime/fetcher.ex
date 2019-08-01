@@ -249,7 +249,7 @@ defmodule Indexer.Block.Realtime.Fetcher do
         {:fetch_and_import, [number]}
 
       true ->
-        {:fetch_and_import, [(previous_number + 1)..number]}
+        {:fetch_and_import, (previous_number + 1)..number}
     end
   end
 
