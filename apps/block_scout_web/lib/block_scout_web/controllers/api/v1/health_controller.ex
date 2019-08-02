@@ -27,16 +27,6 @@ defmodule BlockScoutWeb.API.V1.HealthController do
     |> Jason.encode!()
   end
 
-  def error({:error, :no_decompiled_smart_contracts}) do
-    %{
-      "healthy" => false,
-      "error_code" => 5002,
-      "error_title" => "no decompiled smart-contracts in db",
-      "error_description" => "There are no blocks in the DB"
-    }
-    |> Jason.encode!()
-  end
-
   def error({:error, :no_blocks}) do
     %{
       "healthy" => false,
