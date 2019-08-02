@@ -1819,7 +1819,7 @@ defmodule Explorer.Chain do
   end
 
   def count_db_decompiled_contracts do
-    query = from(p in "decompiled_smart_contracts", select: count(p.id))
+    query = from(p in "pg_class", select: p.reltuples, where: p.relname == "decompiled_smart_contracts")
 
     query
     |> Repo.one()
