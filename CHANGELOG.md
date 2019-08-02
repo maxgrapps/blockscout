@@ -1,6 +1,24 @@
 ## Current
 
 ### Features
+- [#2458](https://github.com/poanetwork/blockscout/pull/2458) - Add LAST_BLOCK var to add ability indexing in the range of blocks
+- [#2456](https://github.com/poanetwork/blockscout/pull/2456) - fetch pending transactions for geth
+
+### Fixes
+- [#2459](https://github.com/poanetwork/blockscout/pull/2459) - fix top addresses query
+- [#2425](https://github.com/poanetwork/blockscout/pull/2425) - Force to show address view for checksummed address even if it is not in DB
+
+### Chore
+- [#2402](https://github.com/poanetwork/blockscout/pull/2402) - bump otp version to 22.0
+- [#2432](https://github.com/poanetwork/blockscout/pull/2432) - bump credo version
+- [#2457](https://github.com/poanetwork/blockscout/pull/2457) - update mix.lock
+- [#2435](https://github.com/poanetwork/blockscout/pull/2435) - Replace deprecated extract-text-webpack-plugin with mini-css-extract-plugin
+- [#2450](https://github.com/poanetwork/blockscout/pull/2450) - Fix clearance of logs and node_modules folders in clearing script
+- [#2434](https://github.com/poanetwork/blockscout/pull/2434) - get rid of timex warnings
+
+## 2.0.2-beta
+
+### Features
 - [#2412](https://github.com/poanetwork/blockscout/pull/2412) - dark theme
 - [#2399](https://github.com/poanetwork/blockscout/pull/2399) - decode verified smart contract's logs
 - [#2391](https://github.com/poanetwork/blockscout/pull/2391) - Controllers Improvements
