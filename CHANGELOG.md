@@ -11,6 +11,8 @@
 - [#2470](https://github.com/poanetwork/blockscout/pull/2470) - Allow Realtime Fetcher to wait for small skips
 
 ### Fixes
+- [#2502](https://github.com/poanetwork/blockscout/pull/2502) - increase reward task timeout
+- [#2496](https://github.com/poanetwork/blockscout/pull/2496) - fix docker build
 - [#2459](https://github.com/poanetwork/blockscout/pull/2459) - fix top addresses query
 - [#2463](https://github.com/poanetwork/blockscout/pull/2463) - dark theme fixes
 - [#2468](https://github.com/poanetwork/blockscout/pull/2468) - fix confirmations for non consensus blocks
