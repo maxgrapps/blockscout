@@ -6,14 +6,21 @@
 - [#2470](https://github.com/poanetwork/blockscout/pull/2470) - Allow Realtime Fetcher to wait for small skips
 - [#2497](https://github.com/poanetwork/blockscout/pull/2497) - Add generic Ordered Cache behaviour and implementation
 - [#2499](https://github.com/poanetwork/blockscout/pull/2499) - import emission reward ranges
+- [#2477](https://github.com/poanetwork/blockscout/pull/2477) - aggregate token transfers on transaction page
 - [#2458](https://github.com/poanetwork/blockscout/pull/2458) - Add LAST_BLOCK var to add ability indexing in the range of blocks
 - [#2456](https://github.com/poanetwork/blockscout/pull/2456) - fetch pending transactions for geth
 - [#2458](https://github.com/poanetwork/blockscout/pull/2458) - Add LAST_BLOCK var to index range of blocks
 - [#2470](https://github.com/poanetwork/blockscout/pull/2470) - Allow Realtime Fetcher to wait for small skips
 
 ### Fixes
+<<<<<<< HEAD
 - [#2502](https://github.com/poanetwork/blockscout/pull/2502) - increase reward task timeout
 - [#2496](https://github.com/poanetwork/blockscout/pull/2496) - fix docker build
+=======
+- [#2463](https://github.com/poanetwork/blockscout/pull/2463) - dark theme fixes
+- [#2496](https://github.com/poanetwork/blockscout/pull/2496) - fix docker build
+- [#2495](https://github.com/poanetwork/blockscout/pull/2495) - fix logs for indexed chain
+>>>>>>> max/master
 - [#2459](https://github.com/poanetwork/blockscout/pull/2459) - fix top addresses query
 - [#2463](https://github.com/poanetwork/blockscout/pull/2463) - dark theme fixes
 - [#2468](https://github.com/poanetwork/blockscout/pull/2468) - fix confirmations for non consensus blocks
